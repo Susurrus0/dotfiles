@@ -25,6 +25,8 @@
     vlc
     obs-studio
     kdiskmark
+    retroarch
+    gnome-usage
 
     # KDE Applications
     kdePackages.kcalc
@@ -32,6 +34,7 @@
     kdePackages.kolourpaint
     kdePackages.akregator
     kdePackages.kdenlive
+    kdePackages.partitionmanager
   ];
 
 }
