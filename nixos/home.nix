@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./bash.nix
+  ];
+
   home.username = "bruno";
   home.homeDirectory = "/home/bruno";
 
