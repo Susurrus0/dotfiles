@@ -116,6 +116,8 @@
     # Only core packages here
     wget
     git
+    htop
+    fastfetch
   ];
 
   fonts.packages = with pkgs; [
