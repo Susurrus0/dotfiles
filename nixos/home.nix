@@ -25,7 +25,6 @@
     vlc
     obs-studio
     kdiskmark
-    firewalld-gui
 
     # KDE Applications
     kdePackages.kcalc
