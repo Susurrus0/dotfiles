@@ -26,7 +26,6 @@
     obs-studio
     kdiskmark
     retroarch
-    gnome-usage
 
     # KDE Applications
     kdePackages.kcalc
