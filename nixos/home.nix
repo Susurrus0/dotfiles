@@ -26,6 +26,7 @@
     obs-studio
     kdiskmark
     retroarch
+    baobab
 
     # KDE Applications
     kdePackages.kcalc
