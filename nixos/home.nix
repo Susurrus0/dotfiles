@@ -34,6 +34,7 @@
     kdePackages.akregator
     kdePackages.kdenlive
     kdePackages.partitionmanager
+    kdePackages.dragon
   ];
 
 }
