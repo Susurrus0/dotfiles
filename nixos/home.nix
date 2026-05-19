@@ -27,7 +27,6 @@
     kdiskmark
     retroarch
     baobab
-    geany
 
     # KDE Applications
     kdePackages.kcalc
