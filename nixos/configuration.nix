@@ -124,6 +124,24 @@
     git
     htop
     fastfetch
+    gnumake
+    cmake
+    gcc
+    clang-tools
+    binutils
+    pkg-config
+    curl
+    dnsutils
+    rsync
+    unzip
+    zip
+    p7zip
+    mame
+    lm_sensors
+    pciutils
+    ripgrep
+    fd
+    gdb
   ];
 
   fonts.packages = with pkgs; [
