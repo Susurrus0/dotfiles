@@ -28,6 +28,7 @@
     retroarch
     baobab
     geany
+    yt-dlp
 
     # KDE Applications
     kdePackages.kcalc
