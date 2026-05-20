@@ -29,6 +29,7 @@
     baobab
     geany
     yt-dlp
+    tree-sitter
 
     # KDE Applications
     kdePackages.kcalc
