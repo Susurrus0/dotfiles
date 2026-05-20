@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -29,7 +29,7 @@
     baobab
     geany
     yt-dlp
-    tree-sitter
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.tree-sitter
 
     # KDE Applications
     kdePackages.kcalc
