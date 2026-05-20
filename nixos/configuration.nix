@@ -61,7 +61,7 @@
 
   # Configure keymap in X11
   services.xserver.xkb.layout = "pl";
-  services.xserver.xkb.options = "eurosign:e,caps:escape";
+  services.xserver.xkb.options = "eurosign:e";
 
   # Force keyboard drivers into early boot stage for password entry
   boot.initrd.kernelModules = [ "atkbd" ];
