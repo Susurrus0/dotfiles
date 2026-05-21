@@ -47,7 +47,7 @@
 
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = true;
+    powerOnBoot = false;
   };
 
   # Enable the X11 windowing system.
