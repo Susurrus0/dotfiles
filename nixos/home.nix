@@ -30,6 +30,10 @@
     geany
     yt-dlp
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.tree-sitter
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.nil # Nix LSP alternative
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.pyright # Python LSP
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.gopls # Go LSP
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.lua-language-server # Lua LSP
 
     # KDE Applications
     kdePackages.kcalc
