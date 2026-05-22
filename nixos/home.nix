@@ -19,6 +19,8 @@
     "foot/foot.ini".source = ./foot.ini;
   };
 
+  services.swayosd.enable = true;
+
   home.packages = with pkgs; [
     tree
     qbittorrent
