@@ -19,6 +19,37 @@
     bind = $mainMod, up, movefocus, u
     bind = $mainMod, down, movefocus, d
 
+    # Input Configuration
+
+    input {
+        kb_layout = us
+        follow_mouse = 1
+
+        touchpad {
+            natural_scroll = true  # Enables inverted, natural 2-finger scrolling
+            tap-to-click = true     # Allows tapping the pad to click
+        }
+    }
+
+    # Windows Aesthetics
+
+    decoration {
+        rounding = 10 # value in pixels
+
+        blur {
+            enabled = true
+            size = 3
+            passes = 1
+        }
+    }
+
+    general {
+        gaps_in = 5
+        gaps_out = 10
+        col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+        col.inactive_border = rgba(595959aa)
+    }
+
     monitor = ,1920x1080@60,auto,1
 
     # Autostart Services
