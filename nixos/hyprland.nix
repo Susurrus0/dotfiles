@@ -82,4 +82,67 @@
     # Launch the wallpaper utility
     exec-once = hyprpaper
   '';
+
+  # Waybar Layout
+  environment.etc."xdg/waybar/config.jsonc".text = ''
+    {
+      "layer": "top",
+      "position": "top",
+      "height": 30,
+      "spacing": 4,
+      "modules-left": ["hyprland/workspaces"],
+      "modules-center": ["clock"],
+      "modules-right": ["network", "wireplumber", "battery"],
+
+      "hyprland/workspaces": {
+        "format": "{name}"
+      },
+      "clock": {
+        "format": "{:%H:%M - %d/%m/%Y}"
+      },
+      "network": {
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-disconnected": "⚠ Disconnected"
+      },
+      "wireplumber": {
+        "format": " {volume}%",
+        "format-muted": " Muted"
+      },
+      "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+      }
+    }
+  '';
+
+  # Waybar Styling Configuration (CSS format)
+  environment.etc."xdg/waybar/style.css".text = ''
+    * {
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-size: 13px;
+      border: none;
+      border-radius: 0;
+    }
+    window#waybar {
+      background-color: rgba(43, 48, 59, 0.85); /* Semitransparent dark slate */
+      color: #ffffff;
+      transition-property: background-color;
+      transition-duration: .5s;
+    }
+    #workspaces button {
+      padding: 0 5px;
+      background-color: transparent;
+      color: #ffffff;
+      border-bottom: 3px solid transparent;
+    }
+    #workspaces button.active {
+      background-color: #64727D;
+      border-bottom: 3px solid #ffffff;
+    }
+    #clock, #network, #wireplumber, #battery {
+      padding: 0 10px;
+      margin: 0 2px;
+      color: #ffffff;
+    }
+  '';
 }
