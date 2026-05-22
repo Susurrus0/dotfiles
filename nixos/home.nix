@@ -36,6 +36,7 @@
     baobab
     geany
     yt-dlp
+    stress-ng
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.tree-sitter
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.nil # Nix LSP alternative
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.pyright # Python LSP
