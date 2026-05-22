@@ -72,7 +72,7 @@
         col.inactive_border = rgba(595959aa)
     }
 
-    monitor = ,1920x1080@60,auto,1
+    monitor = ,1920x1080@60,auto,1.2
 
     # Autostart Services
 
