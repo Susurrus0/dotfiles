@@ -64,9 +64,9 @@
     xwayland.enable = true;
   };
 
-  services.logind.extraConfig = ''
-    HandlePowerKey=ignore
-  '';
+  services.logind.settings.Login = {
+    HandlePowerKey = "ignore";
+  };
   
 
   # Configure keymap in X11
