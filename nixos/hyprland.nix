@@ -19,6 +19,18 @@
     bind = $mainMod, up, movefocus, u
     bind = $mainMod, down, movefocus, d
 
+    bind = $mainMod, 1, workspace, 1
+    bind = $mainMod, 2, workspace, 2
+    bind = $mainMod, 3, workspace, 3
+    bind = $mainMod, 4, workspace, 4
+    bind = $mainMod, 5, workspace, 5
+
+    bind = $mainMod SHIFT, 1, movetoworkspace, 1
+    bind = $mainMod SHIFT, 2, movetoworkspace, 2
+    bind = $mainMod SHIFT, 3, movetoworkspace, 3
+    bind = $mainMod SHIFT, 4, movetoworkspace, 4
+    bind = $mainMod SHIFT, 5, movetoworkspace, 5
+
     # Input Configuration
 
     input {
