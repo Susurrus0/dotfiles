@@ -31,6 +31,16 @@
     bind = $mainMod SHIFT, 4, movetoworkspace, 4
     bind = $mainMod SHIFT, 5, movetoworkspace, 5
 
+    # Volume keys
+    binde = , XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+    binde = , XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+    bindl = , XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+    bindl = , XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+    # Screen Brightness keys
+    binde = , XF86MonBrightnessUp, exec, brightnessctl set 5%+
+    binde = , XF86MonBrightnessDown, exec, brightnessctl set 5%-
+
     # Input Configuration
 
     input {
