@@ -1,5 +1,5 @@
 {
-  description = "ThinkPad X280 Flake Configuration";
+  description = "NixOS with Hyprland";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
