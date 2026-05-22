@@ -150,6 +150,7 @@
     ripgrep
     fd
     gdb
+    foot
     # Packages for Hyprland
     kitty
     wofi
