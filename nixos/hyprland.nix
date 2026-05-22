@@ -20,5 +20,13 @@
     bind = $mainMod, down, movefocus, d
 
     monitor = ,1920x1080@60,auto,1
+
+    # Autostart Services
+
+    # Launch the top status bar automatically on boot
+    exec-once = waybar
+
+    # Launch the wallpaper utility
+    exec-once = hyprpaper
   '';
 }
