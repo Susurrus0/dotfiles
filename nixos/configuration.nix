@@ -149,6 +149,12 @@
     ripgrep
     fd
     gdb
+    # Packages for Hyprland
+    kitty
+    wofi
+    waybar
+    hyprpaper
+    wl-clipboard
   ];
 
   fonts.packages = with pkgs; [
