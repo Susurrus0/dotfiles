@@ -34,7 +34,7 @@
     # Input Configuration
 
     input {
-        kb_layout = us
+        kb_layout = pl
         follow_mouse = 1
 
         touchpad {
