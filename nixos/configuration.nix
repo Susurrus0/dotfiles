@@ -156,6 +156,7 @@
     waybar
     hyprpaper
     wl-clipboard
+    brightnessctl
   ];
 
   fonts.packages = with pkgs; [
