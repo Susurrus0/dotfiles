@@ -157,6 +157,10 @@
     hyprpaper
     wl-clipboard
     brightnessctl
+    snip
+    networkmanagerapplet
+    blueman
+    swaynotificationcenter
   ];
 
   fonts.packages = with pkgs; [
