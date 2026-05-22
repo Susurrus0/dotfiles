@@ -157,7 +157,7 @@
     hyprpaper
     wl-clipboard
     brightnessctl
-    snip
+    haskellPackages.the-snip
     networkmanagerapplet
     blueman
     swaynotificationcenter
