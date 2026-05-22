@@ -14,6 +14,11 @@
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
 
+  xdg.configFile = {
+    "hypr/hyprland.conf".source = ./hyprland.conf;
+    "foot/foot.ini".source = ./foot.ini;
+  };
+
   home.packages = with pkgs; [
     tree
     qbittorrent
