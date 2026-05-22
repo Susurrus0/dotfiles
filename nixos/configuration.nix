@@ -161,6 +161,7 @@
     networkmanagerapplet
     blueman
     swaynotificationcenter
+    pavucontrol
   ];
 
   fonts.packages = with pkgs; [
