@@ -63,6 +63,10 @@
     enable = true;
     xwayland.enable = true;
   };
+
+  services.logind.extraConfig = ''
+    HandlePowerKey=ignore
+  '';
   
 
   # Configure keymap in X11
