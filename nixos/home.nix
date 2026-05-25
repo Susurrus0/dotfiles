@@ -1,6 +1,6 @@
 let
   cursorTheme = "Bibata-Modern-Classic"; # Or Bibata-Modern-Ice
-  cursorSize = 32;
+  cursorSize = 24;
 in
 
 { config, pkgs, inputs, ... }:
