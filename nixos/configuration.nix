@@ -67,8 +67,10 @@
   services.logind.settings.Login = {
     HandlePowerKey = "ignore";
   };
-  
 
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.sddm.enableGnomeKeyring = true;
+  
   # Configure keymap in X11
   services.xserver.xkb.layout = "pl";
   services.xserver.xkb.options = "eurosign:e";
