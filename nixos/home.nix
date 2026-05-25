@@ -1,3 +1,8 @@
+let
+  cursorTheme = "Bibata-Modern-Classic"; # Or Bibata-Modern-Ice
+  cursorSize = 32;
+in
+
 { config, pkgs, inputs, ... }:
 
 {
@@ -28,8 +33,15 @@
 #     package = pkgs.hyprcursor;
 #     name = "hyprcursor_light";
     package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic"; # Or Bibata-Modern-Ice
-    size = 32;
+    name = cursorTheme;
+    size = cursorSize;
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      cursor-theme = cursorTheme;
+      cursor-size = cursorSize;
+    };
   };
 
   home.packages = with pkgs; [
