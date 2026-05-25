@@ -21,6 +21,14 @@
 
   services.swayosd.enable = true;
 
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    package = pkgs.hyprcursor;
+    name = "hyprcursor_light";
+    size = 24;
+  };
+
   home.packages = with pkgs; [
     tree
     qbittorrent
