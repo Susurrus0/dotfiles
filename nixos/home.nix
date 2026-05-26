@@ -44,6 +44,19 @@ in
     };
   };
 
+  programs.wofi = {
+    enable = true;
+    settings = {
+      width = 500;
+      height = 350;
+      location = "center";
+      show = "drun";
+      allow_images = true;
+    };
+
+    style = ./wofi-style.css;
+  };
+
   home.packages = with pkgs; [
     tree
     qbittorrent
