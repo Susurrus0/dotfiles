@@ -44,6 +44,19 @@ in
     };
   };
 
+  programs.rofi = {
+    enable = true;
+    package = pkgs.rofi-wayland;
+
+    extraConfig = {
+      modi = "drun,run";
+      show-icons = true;
+      icon-theme = "Papirus";
+    };
+
+    theme = "lucid";
+  };
+
   home.packages = with pkgs; [
     tree
     qbittorrent
@@ -81,7 +94,7 @@ in
     layout = [
       {
         label = "lock";
-        action = "loginctl lock-session"; # Works universally with SDDM/systemd
+        action = "loginctl lock-session";
         text = "Lock";
         keybind = "l";
       }
@@ -93,7 +106,7 @@ in
       }
       {
         label = "logout";
-        action = "hyprctl dispatch exit"; # Safely drops you back to SDDM
+        action = "hyprctl dispatch exit";
         text = "Logout";
         keybind = "e";
       }
