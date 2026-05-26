@@ -64,9 +64,9 @@
     xwayland.enable = true;
   };
 
-  services.logind = {
-    lidSwitch = "suspend";
-    lidSwitchIgnoreInhibited = false;
+  services.logind.settings.Login = {
+    HandleLidSwitch = "suspend";
+    LidSwitchIgnoreInhibited = "no";
   };
 
   services.gnome.gnome-keyring.enable = true;
@@ -125,7 +125,7 @@
   programs.neovim = {
     enable = true;
     defaultEditor = false;
-    package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.neovim-unwrapped;
+    package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.neovim-unwrapped;
   };
 
 
