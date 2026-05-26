@@ -89,6 +89,49 @@ in
     kdePackages.dragon
   ];
 
+  programs.hyprlock = {
+    enable = true;
+    settings = {
+      general = {
+        disable_loading_bar = true;
+        grace = 0; # Set to a few seconds if you want a grace period before it locks
+      };
+      background = [
+        {
+          path = "screenshot"; # Blurs your current desktop screen as the background
+          blur_passes = 3;
+          blur_size = 8;
+        }
+      ];
+      input-field = [
+        {
+          size = "250, 60";
+          outline_thickness = 2;
+          dots_size = 0.2;
+          dots_spacing = 0.2;
+          fade_on_empty = false;
+        }
+      ];
+    };
+  };
+
+  services.hypridle = {
+    enable = true;
+    settings = {
+      listener = [
+        {
+          # automatically lock screen if idle for 5 minutes
+          timeout = 300;
+          on-timeout = "hyprlock";
+        }
+      ];
+      # lock immediately BEFORE the system goes to sleep/closes lid
+      behavior = {
+        before_sleep_cmd = "hyprlock";
+      };
+    };
+  };
+
   programs.wlogout = {
     enable = true;
     layout = [
