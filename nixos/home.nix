@@ -88,6 +88,7 @@ in
     kdePackages.partitionmanager
     kdePackages.dragon
     kdePackages.dolphin
+    kdePackages.kate
   ];
 
   programs.hyprlock = {
