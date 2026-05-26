@@ -118,17 +118,19 @@ in
   services.hypridle = {
     enable = true;
     settings = {
+      general = {
+        lock_cmd = "pidof hyprlock || hyprlock";
+
+        before_sleep_cmd = "pidof hyprlock || hyprlock";
+      };
+
       listener = [
         {
           # automatically lock screen if idle for 5 minutes
           timeout = 300;
-          on-timeout = "hyprlock";
+          on-timeout = "pidof hyprlock || hyprlock";
         }
       ];
-      # lock immediately BEFORE the system goes to sleep/closes lid
-      behavior = {
-        before_sleep_cmd = "hyprlock";
-      };
     };
   };
 
