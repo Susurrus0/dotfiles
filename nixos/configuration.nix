@@ -66,9 +66,7 @@
 
   services.logind = {
     lidSwitch = "suspend";
-    extraConfig = ''
-      LidSwitchIgnoreInhibited=no
-    '';
+    lidSwitchIgnoreInhibited = false;
   };
 
   services.gnome.gnome-keyring.enable = true;
