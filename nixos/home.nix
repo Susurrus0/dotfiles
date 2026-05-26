@@ -79,6 +79,7 @@ in
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.gopls # Go LSP
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.lua-language-server # Lua LSP
     wl-clipboard
+    onlyoffice-desktopeditors
 
     # KDE Applications
     kdePackages.kcalc
