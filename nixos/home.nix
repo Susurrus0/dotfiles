@@ -44,19 +44,6 @@ in
     };
   };
 
-  programs.rofi = {
-    enable = true;
-    package = pkgs.rofi;
-
-    extraConfig = {
-      modi = "drun,run";
-      show-icons = true;
-      icon-theme = "Papirus";
-    };
-
-    theme = "lucid";
-  };
-
   home.packages = with pkgs; [
     tree
     qbittorrent
