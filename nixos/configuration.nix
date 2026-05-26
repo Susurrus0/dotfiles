@@ -64,8 +64,11 @@
     xwayland.enable = true;
   };
 
-  services.logind.settings.Login = {
-    HandlePowerKey = "ignore";
+  services.logind = {
+    lidSwitch = "suspend";
+    extraConfig = ''
+      LidSwitchIgnoreInhibited=no
+    '';
   };
 
   services.gnome.gnome-keyring.enable = true;
