@@ -78,6 +78,7 @@ in
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.pyright # Python LSP
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.gopls # Go LSP
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.lua-language-server # Lua LSP
+    wl-clipboard
 
     # KDE Applications
     kdePackages.kcalc
