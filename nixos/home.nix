@@ -80,6 +80,7 @@ in
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.lua-language-server # Lua LSP
     wl-clipboard
     onlyoffice-desktopeditors
+    clementine
 
     # KDE Applications
     kdePackages.kcalc
