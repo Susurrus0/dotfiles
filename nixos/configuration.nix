@@ -149,7 +149,6 @@
     package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.neovim-unwrapped;
   };
 
-
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
@@ -178,6 +177,7 @@
     fd
     gdb
     foot
+    libsForQt5.qt5.qtwayland
     # Packages for Hyprland
     kitty
     wofi
@@ -191,6 +191,14 @@
     swaynotificationcenter
     pavucontrol
   ];
+
+  environment.sessionVariables = {
+    # force Electron apps to use Wayland
+    NIXOS_OZONE_WL = "1";
+    # force Qt apps to use Wayland
+    QT_QPA_PLATFORM = "wayland;xcb";
+    QT_WAYLAND_DISABLE_WINDOWDECORATION = "0";
+  };
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
