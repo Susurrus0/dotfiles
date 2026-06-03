@@ -53,6 +53,9 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # Enable automatic detection of USB drives
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
 
   # Enable the Plasma Desktop Environment.
   # services.displayManager.sddm.enable = true;
