@@ -121,6 +121,8 @@ in
     wl-clipboard
     onlyoffice-desktopeditors
     clementine
+    zathura
+    imv
 
     # KDE Applications
     kdePackages.kcalc
@@ -133,6 +135,18 @@ in
     kdePackages.dolphin
     kdePackages.kate
   ];
+
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "text/html" = [ "firefox.desktop" ];
+      "x-scheme-handler/http" = [ "firefox.desktop" ];
+      "x-scheme-handler/https" = [ "firefox.desktop" ];
+      "application/pdf" = [ "org.pwmt.zathura.desktop" ];
+      "image/png" = [ "imv.desktop" ];
+      "image/jpeg" = [ "imv.desktop" ];
+    };
+  };
 
   programs.hyprlock = {
     enable = true;

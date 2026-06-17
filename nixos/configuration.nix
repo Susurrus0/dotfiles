@@ -16,12 +16,11 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.plymouth.enable = true;
 
-  networking.hostName = "ThinkPad-X280"; # Define your hostname.
+  services.getty.autologinUser = "bruno";
 
-  # Configure network connections interactively with nmcli or nmtui.
+  networking.hostName = "ThinkPad-X280";
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
   time.timeZone = "Europe/Warsaw";
 
   # Tell the initrd to open LUKS before scanning for LVM
@@ -50,52 +49,17 @@
     powerOnBoot = false;
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable automatic detection of USB drives
+  # Enable automatic detection of disks and USB drives
   services.udisks2.enable = true;
   services.gvfs.enable = true;
-
-  # Enable the Plasma Desktop Environment.
-  # services.displayManager.sddm.enable = true;
-  # services.desktopManager.plasma6.enable = true;
-
-  # greetd and tuigreet
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd Hyprland --theme 'border=magenta;text=cyan;prompt=green;time=red;action=blue;button=yellow;container=black;input=red'";
-        user = "greeter";
-      };
-    };
-  };
-
-  systemd.services.greetd.serviceConfig = {
-    Type = "idle";
-    StandardInput = "tty";
-    StandardOutput = "tty";
-    StandardError = "journal";
-    TTYReset = true;
-    TTYVHangup = true;
-    TTYVTDisallocate = true;
-  };
 
   # Hyprland
   programs.hyprland = {
     enable = true;
+  #   withUWSM = true;
     xwayland.enable = true;
   };
 
-  services.logind.settings.Login = {
-    HandleLidSwitch = "suspend";
-    LidSwitchIgnoreInhibited = "no";
-  };
-
-  services.gnome.gnome-keyring.enable = true;
-  security.pam.services.sddm.enableGnomeKeyring = true;
-  
   # Configure keymap in X11
   services.xserver.xkb.layout = "pl";
   services.xserver.xkb.options = "eurosign:e";
@@ -106,9 +70,6 @@
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
-  # Enable sound.
-  # services.pulseaudio.enable = true;
-  # OR
   services.pipewire = {
     enable = true;
     pulse.enable = true;
@@ -116,6 +77,9 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
+
+  environment.pathsToLink = [ "/share/applications" ];
+  services.dbus.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.bruno = {
