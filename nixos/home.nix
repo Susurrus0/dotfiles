@@ -8,7 +8,7 @@ in
 {
   imports = [
     ./bash.nix
-    inputs.catppuccin.homeManagerModules.catppuccin
+    inputs.catppuccin.homeModules.catppuccin
   ];
 
   home.username = "bruno";
