@@ -116,6 +116,13 @@
     package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.neovim-unwrapped;
   };
 
+  # CPU undervolt
+  services.undervolt = {
+    enable = true;
+    coreOffset = -70; # -120 max
+    gpuOffset = -70; # -120 max
+    uncoreOffset = -30; # -80 max, especially careful here
+
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
@@ -145,6 +152,8 @@
     gdb
     foot
     libsForQt5.qt5.qtwayland
+    s-tui
+    stress
     # Packages for Hyprland
     kitty
     wofi
