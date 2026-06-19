@@ -47,10 +47,6 @@ in
   catppuccin.flavor = "frappe"; # latte, frappe, macchiato, or mocha
   catppuccin.enable = true;
 
-  wayland.windowManager.hyprland.catppuccin.enable = true;
-  programs.foot.catppuccin.enable = true;
-  programs.waybar.catppuccin.enable = true;
-
   programs.wofi = {
     enable = true;
     settings = {
