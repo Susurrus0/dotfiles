@@ -150,6 +150,10 @@
     wofi
     waybar
     hyprpaper
+    hyprshot
+    hyprpicker
+    # hyprlock
+    # hypridle
     wl-clipboard
     brightnessctl
     haskellPackages.the-snip
