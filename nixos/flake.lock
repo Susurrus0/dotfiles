@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "catpuccin": {
+    "catppuccin": {
       "inputs": {
         "nixpkgs": "nixpkgs"
       },
@@ -86,7 +86,7 @@
     },
     "root": {
       "inputs": {
-        "catpuccin": "catpuccin",
+        "catppuccin": "catppuccin",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable"
