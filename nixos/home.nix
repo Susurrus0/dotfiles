@@ -8,6 +8,7 @@ in
 {
   imports = [
     ./bash.nix
+    inputs.catppuccin.homeManagerModules.catppuccin
   ];
 
   home.username = "bruno";
@@ -42,6 +43,13 @@ in
       cursor-size = cursorSize;
     };
   };
+
+  catppuccin.flavor = "frappe"; # latte, frappe, macchiato, or mocha
+  catppuccin.enable = true;
+
+  wayland.windowManager.hyprland.catppuccin.enable = true;
+  programs.foot.catppuccin.enable = true;
+  programs.waybar.catppuccin.enable = true;
 
   programs.wofi = {
     enable = true;
