@@ -46,6 +46,7 @@ in
 
   catppuccin.flavor = "frappe"; # latte, frappe, macchiato, or mocha
   catppuccin.enable = true;
+  catppuccin.autoEnable = true;
 
   programs.wofi = {
     enable = true;
