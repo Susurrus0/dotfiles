@@ -169,7 +169,7 @@
       }
 
       /* Keyboard State (Caps Lock Toggled) */
-      #keyboard-state.locked {
+      #keyboard-state label.locked {
         color: #8caaee; /* Frappé Blue accent when Caps Lock is ON */
         font-weight: bold;
       }
