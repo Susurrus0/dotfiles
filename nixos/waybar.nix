@@ -154,15 +154,15 @@
       }
       #workspaces button.active {
         color: #303446;
-        background-color:
+        background-color: #ca9ee6;
       }
       #workspaces button.urgent {
-        color: #e78284; /* Frappé Red for urgent alerts */
+        color: #e78284;
       }
 
       /* Window Title Styling */
       #window {
-        color: #a5adce; /* Frappé Subtext0 */
+        color: #a5adce;
         font-style: italic;
       }
 
@@ -170,19 +170,19 @@
 
       /* Battery Warn & Critical states */
       #battery.warning {
-        color: #ef9f76; /* Frappé Peach */
+        color: #ef9f76;
       }
       #battery.critical, #battery.charging.critical {
-        color: #e78284; /* Frappé Red */
+        color: #e78284;
         font-weight: bold;
       }
 
       /* Keyboard State (Caps Lock Toggled) */
       #keyboard-state label.locked {
-        background-color: #8caaee; /* Frappé Blue Background */
-        color: #303446;            /* Dark text (Frappé Base) for readability */
+        background-color: #8caaee;
+        color: #303446;
         border-radius: 4px;
-        padding: 0 6px;            /* Internal padding for the text */
+        padding: 0 6px;
         margin: 2px 0;
       }
     '';
