@@ -143,8 +143,10 @@
         color: #737994; /* Frappé Overlay0 for inactive */
       }
       #workspaces button.active {
-        color: #ca9ee6; /* Frappé Mauve for active */
-      }
+        color: #303446; /* Dark text (Frappé Base) to contrast against the pill */
+        background-color: #ca9ee6; /* Frappé Mauve background pill */
+        border-radius: 6px;
+        margin: 3px 0; /* Keeps the pill neatly framed inside the bar */      }
       #workspaces button.urgent {
         color: #e78284; /* Frappé Red for urgent alerts */
       }
