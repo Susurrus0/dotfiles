@@ -16,7 +16,7 @@
         spacing = 18;
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
         modules-center = [ "hyprland/window" ];
-        modules-right = [ "pulseaudio" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "battery" "clock" ];
+        modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "battery" "clock" ];
         "hyprland/workspaces" = {
           "format" = "{name}: {icon}";
           "format-icons" = {
@@ -50,6 +50,11 @@
           "scroll-step" = 1;
           "on-click" = "pavucontrol";
           "ignored-sinks" = ["Easy Effects Sink"];
+        };
+        "backlight" = {
+          "device" = "intel_backlight";
+          "format" = "{percent}% {icon}";
+          "format-icons" = ["" ""];
         };
         "network" = {
           "interface" = "wlp59s0";
@@ -86,7 +91,7 @@
           "capslock" = true;
           "format" = {
               # "numlock" = "N {icon}";
-              "capslock" = "C {icon}";
+              "capslock" = "Caps {icon}";
           };
           "format-icons" = {
               "locked" = "";
@@ -99,7 +104,7 @@
         };
         "clock" = {
           "interval" = 60;
-          "format" = "{:%I:%M %p}";
+          "format" = "{:%I:%M %p }";
           };
         };
       };
