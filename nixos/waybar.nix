@@ -13,6 +13,7 @@
           "eDP-1"
           "HDMI-A-1"
         ];
+        spacing = 18;
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
         modules-center = [ "hyprland/window" ];
         modules-right = [ "pulseaudio" "network" "mpd" "temperature" "battery" "clock" ];
@@ -61,6 +62,13 @@
           "tooltip-format-ethernet" = "{ifname} ";
           "tooltip-format-disconnected" = "Disconnected";
           "max-length" = 50;
+        };
+        "temperature" = {
+          # "thermal-zone": 2,
+          # "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+          "critical-threshold" = 80;
+          "format-critical" = "{temperatureC}°C ";
+          "format" = "{temperatureC}°C ";
         };
         "battery" = {
           "format" = "{capacity}% {icon}";
