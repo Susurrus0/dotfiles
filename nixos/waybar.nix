@@ -14,8 +14,8 @@
           "HDMI-A-1"
         ];
         spacing = 18;
-        modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
-        modules-center = [ "hyprland/window" ];
+        modules-left = [ "hyprland/workspaces" "wlr/taskbar" "hyprland/window" ];
+        modules-center = [  ];
         modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "battery" "clock" ];
         "hyprland/workspaces" = {
           "format" = "{name}: {icon}";
