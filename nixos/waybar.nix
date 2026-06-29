@@ -178,8 +178,11 @@
 
       /* Keyboard State (Caps Lock Toggled) */
       #keyboard-state label.locked {
-        color: #8caaee; /* Frappé Blue accent when Caps Lock is ON */
-        font-weight: bold;
+        background-color: #8caaee; /* Frappé Blue Background */
+        color: #303446;            /* Dark text (Frappé Base) for readability */
+        border-radius: 4px;
+        padding: 0 6px;            /* Internal padding for the text */
+        margin: 2px 0;
       }
     '';
   };
