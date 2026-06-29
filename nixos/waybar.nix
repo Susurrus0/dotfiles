@@ -21,10 +21,15 @@
           "format" = "{name}: {icon}";
           "format-icons" = {
               "1" = "";
-              "2" = "";
+              "2" = "󰖟";
               "3" = "";
-              "4" = "";
+              "4" = "";
               "5" = "";
+              "6" = "";
+              "7" = "";
+              "8" = "";
+              "9" = "";
+              "10" = "";
           };
           "persistent-workspaces" = {
               # "*" = 5; # 5 workspaces by default on every monitor
@@ -38,7 +43,7 @@
           "icon-theme" = "Numix-Circle";
           "on-click" = "activate";
           "on-click-middle" = "close";
-          "ignore-list" = [ "foot" ];
+          "ignore-list" = [ "foot" "kitty" ];
         };
         "hyprland/window" = {
           "max-length" = 40;
@@ -130,7 +135,7 @@
         border-radius: 0;
         /* Multiple font fallbacks to fix icon truncation */
         font-family: "Source Code Pro", "Symbols Nerd Font", "Font Awesome 6 Free", sans-serif;
-        font-size: 13px;
+        font-size: 16px;
       }
 
       window#waybar {
