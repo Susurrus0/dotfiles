@@ -32,6 +32,14 @@
               # "HDMI-A-1" = 3; # but only three on HDMI-A-1
           };
         };
+        "wlr/taskbar" = {
+          "format" = "{icon}";
+          "icon-size" = 16;
+          "icon-theme" = "Numix-Circle";
+          "on-click" = "activate";
+          "on-click-middle" = "close";
+          "ignore-list" = [ "foot" ];
+        };
         "hyprland/window" = {
           "max-length" = 40;
           "separate-outputs" = true;
