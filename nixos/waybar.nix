@@ -71,7 +71,7 @@
           };
         };
       };
-    style = "
+    style =''
       * {
         border: none;
         border-radius: 0;
@@ -84,7 +84,7 @@
       #workspaces button {
         padding: 0 5px;
       }
-    ";
+    '';
     };
   };
 }
