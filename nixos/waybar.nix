@@ -75,7 +75,7 @@
         };
         "cpu" = {
           "interval" = 5;
-          "format" = "{}% ";
+          "format" = "{usage:.0f}% ";
           "max-length" = 10;
         };
         "temperature" = {
