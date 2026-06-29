@@ -112,6 +112,7 @@
         "clock" = {
           "interval" = 60;
           "format" = "{:%I:%M %p }";
+          "tooltip-format" = "{:%A, %B %d, %Y}";
           };
         };
       };
