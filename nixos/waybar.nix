@@ -31,6 +31,7 @@
                   "*eDP-1" = 5; # 5 workspaces by default on every monitor
                   # "HDMI-A-1" = 3; # but only three on HDMI-A-1
             };
+          };
         "pulseaudio" = {
           "format" = "{volume}% {icon}";
           "format-bluetooth" = "{volume}% {icon}";
@@ -85,6 +86,5 @@
         padding: 0 5px;
       }
     '';
-    };
   };
 }
