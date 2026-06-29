@@ -9,6 +9,7 @@ in
   imports = [
     ./bash.nix
     inputs.catppuccin.homeModules.catppuccin
+    ./waybar.nix
   ];
 
   home.username = "bruno";

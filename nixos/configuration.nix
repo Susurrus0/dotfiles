@@ -158,7 +158,6 @@
     # Packages for Hyprland
     kitty
     wofi
-    waybar
     hyprpaper
     hyprshot
     hyprpicker
