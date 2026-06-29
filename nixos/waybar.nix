@@ -28,12 +28,16 @@
               "active" = "";
               "default" = "";
           };
-            "persistent-workspaces" = {
-                  # "*" = 5; # 5 workspaces by default on every monitor
-                  "eDP-1" = 5; # 5 workspaces specifically on built-in monitor
-                  # "HDMI-A-1" = 3; # but only three on HDMI-A-1
-            };
+          "persistent-workspaces" = {
+              # "*" = 5; # 5 workspaces by default on every monitor
+              "eDP-1" = 5; # 5 workspaces specifically on built-in monitor
+              # "HDMI-A-1" = 3; # but only three on HDMI-A-1
           };
+        };
+        "hyprland/window" = {
+          "max-length" = 40;
+          "separate-outputs" = true;
+        };
         "pulseaudio" = {
           "format" = "{volume}% {icon}";
           "format-bluetooth" = "{volume}% {icon}";
