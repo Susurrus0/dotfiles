@@ -102,6 +102,10 @@
           };
         };
         "battery" = {
+          "states" = {
+            "warning" = 20;
+            "critical" = 10;
+          };
           "format" = "{capacity}% {icon}";
           "format-icons" = ["" "" "" "" ""];
         };
