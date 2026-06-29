@@ -16,7 +16,7 @@
         spacing = 18;
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
         modules-center = [ "hyprland/window" ];
-        modules-right = [ "pulseaudio" "network" "mpd" "temperature" "battery" "clock" ];
+        modules-right = [ "pulseaudio" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "battery" "clock" ];
         "hyprland/workspaces" = {
           "format" = "{name}: {icon}";
           "format-icons" = {
@@ -63,6 +63,11 @@
           "tooltip-format-disconnected" = "Disconnected";
           "max-length" = 50;
         };
+        "cpu" = {
+          "interval" = 5;
+          "format" = "{}% ";
+          "max-length" = 10;
+        };
         "temperature" = {
           # "thermal-zone": 2,
           # "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -70,6 +75,23 @@
           "interval" = 5;
           "format-critical" = "{temperatureC}°C ";
           "format" = "{temperatureC}°C ";
+        };
+        "memory" = {
+          "interval" = 30;
+          "format" = "{}% ";
+          "max-length" = 10;
+        };
+        "keyboard-state" = {
+          # "numlock" = true;
+          "capslock" = true;
+          "format" = {
+              # "numlock" = "N {icon}";
+              "capslock" = "C {icon}";
+          };
+          "format-icons" = {
+              "locked" = "";
+              "unlocked" = "";
+          };
         };
         "battery" = {
           "format" = "{capacity}% {icon}";
