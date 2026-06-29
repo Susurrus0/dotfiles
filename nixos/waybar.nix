@@ -29,7 +29,8 @@
               "default" = "";
           };
             "persistent-workspaces" = {
-                  "*eDP-1" = 5; # 5 workspaces by default on every monitor
+                  # "*" = 5; # 5 workspaces by default on every monitor
+                  "eDP-1" = 5; # 5 workspaces specifically on built-in monitor
                   # "HDMI-A-1" = 3; # but only three on HDMI-A-1
             };
           };
