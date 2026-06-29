@@ -147,13 +147,15 @@
 
       /* Active / Inactive Workspaces */
       #workspaces button {
-        padding: 0 10px;           /* Equalized internal left/right padding */
-        margin: 3px 3px;           /* Safe outer spacing prevents bleeding into adjacent items */
-        color: #737994;            /* Frappé Overlay0 for inactive */
-        border-radius: 6px;        /* Forces pill shape layout onto all states */      }
+        padding: 0 10px;
+        margin: 3px 3px;
+        color: #737994;
+        border-radius: 6px;
+      }
       #workspaces button.active {
-        color: #303446;            /* Dark text (Frappé Base) */
-        background-color: #ca9ee6; /* Frappé Mauve background pill */
+        color: #303446;
+        background-color:
+      }
       #workspaces button.urgent {
         color: #e78284; /* Frappé Red for urgent alerts */
       }
