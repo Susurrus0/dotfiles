@@ -117,14 +117,56 @@
       * {
         border: none;
         border-radius: 0;
-        font-family: Source Code Pro;
+        /* Multiple font fallbacks to fix icon truncation */
+        font-family: "Source Code Pro", "Symbols Nerd Font", "Font Awesome 6 Free", sans-serif;
+        font-size: 13px;
       }
+
       window#waybar {
-        background: #16191C;
-        color: #AAB2BF;
+        background: rgba(48, 52, 70, 0.80); /* Catppuccin Frappé Base @ 80% opacity */
+        color: #c6d0f5; /* Frappé Text */
+        border-bottom: 2px solid #414559; /* Frappé Surface0 line */
       }
+
+      /* Unified spacing and extra padding on the right to prevent cutoffs */
+      #workspaces, #taskbar, #pulseaudio, #backlight, #network, #mpd, #cpu, #temperature, #memory, #keyboard-state, #battery, #clock, #window {
+        padding: 0 10px;
+        color: #c6d0f5;
+      }
+
+      /* Active / Inactive Workspaces */
       #workspaces button {
         padding: 0 5px;
+        color: #737994; /* Frappé Overlay0 for inactive */
+      }
+      #workspaces button.active {
+        color: #ca9ee6; /* Frappé Mauve for active */
+      }
+      #workspaces button.urgent {
+        color: #e78284; /* Frappé Red for urgent alerts */
+      }
+
+      /* Window Title Styling */
+      #window {
+        color: #a5adce; /* Frappé Subtext0 */
+        font-style: italic;
+      }
+
+      /* FANCY DYNAMIC EFFECTS */
+
+      /* Battery Warn & Critical states */
+      #battery.warning {
+        color: #ef9f76; /* Frappé Peach */
+      }
+      #battery.critical, #battery.charging.critical {
+        color: #e78284; /* Frappé Red */
+        font-weight: bold;
+      }
+
+      /* Keyboard State (Caps Lock Toggled) */
+      #keyboard-state.locked {
+        color: #8caaee; /* Frappé Blue accent when Caps Lock is ON */
+        font-weight: bold;
       }
     '';
   };
