@@ -13,7 +13,7 @@
           "eDP-1"
           "HDMI-A-1"
         ];
-        spacing = 18;
+        spacing = 12;
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" "hyprland/window" ];
         modules-center = [  ];
         modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "battery" "clock" ];
@@ -135,7 +135,7 @@
         border-radius: 0;
         /* Multiple font fallbacks to fix icon truncation */
         font-family: "Source Code Pro", "Symbols Nerd Font", "Font Awesome 6 Free", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
       }
 
       window#waybar {
