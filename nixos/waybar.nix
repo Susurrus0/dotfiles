@@ -184,6 +184,9 @@
         padding: 0 6px;
         margin: 2px 0;
       }
+      #battery.charging {
+        color: #a6d189;
+      }
 
       /* Keyboard State (Caps Lock Toggled) */
       #keyboard-state label.locked {
