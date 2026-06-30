@@ -16,7 +16,7 @@
         spacing = 12;
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" "hyprland/window" ];
         modules-center = [  ];
-        modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "group/tray-drawer" "battery" "clock" ];
+        modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "group/tray-drawer" "battery" "clock" "custom/power" ];
         "hyprland/workspaces" = {
           "format" = "{name}: {icon}";
           "format-icons" = {
@@ -137,7 +137,6 @@
           "format" = "  ";
           "tooltip" = false;
         };
-
         "tray" = {
           "icon-size" = 16;
           "spacing" = 10;
@@ -154,7 +153,12 @@
           "interval" = 60;
           "format" = "{:%I:%M %p }";
           "tooltip-format" = "{:%A, %B %d, %Y}";
-          };
+        };
+        "custom/power" = {
+          "format" = "⏻";
+          "on-click" = "wlogout";
+          "tooltip" = false;
+        };
         };
       };
     style =''
@@ -170,6 +174,18 @@
         background: rgba(48, 52, 70, 0.80); /* Catppuccin Frappé Base @ 80% opacity */
         color: #c6d0f5; /* Frappé Text */
         border-bottom: 2px solid #414559; /* Frappé Surface0 line */
+      }
+
+      /* Power button*/
+      #custom-power {
+        padding: 0 12px 0 6px;
+        font-size: 16px;
+      }
+      #custom-power:hover {
+        background-color: #e78284;
+        color: #303446;
+        border-radius: 4px;
+        margin: 2px 0;
       }
 
       /* Unified spacing and extra padding on the right to prevent cutoffs */
