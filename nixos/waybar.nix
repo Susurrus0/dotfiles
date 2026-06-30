@@ -196,6 +196,15 @@
         padding: 0 6px;
         margin: 2px 0;
       }
+
+      /* Pulseaudio Mute */
+      #pulseaudio.muted {
+        background-color: #ef9f76;
+        color: #303446;
+        border-radius: 4px;
+        padding: 0 6px;
+        margin: 2px 0;
+      }
     '';
   };
 }
