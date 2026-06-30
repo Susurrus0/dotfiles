@@ -206,16 +206,16 @@
 
       /* High CPU usage, Temp, Memory usage*/
       #memory.medium {
-        colour: #ef9f76;
+        color: #ef9f76;
       }
       #memory.high {
-        colour: #e78284;
+        color: #e78284;
       }
       #temperature.critical {
-        colour: #e78284;
+        color: #e78284;
       }
       #cpu.high {
-        colour: #e78284;
+        color: #e78284;
       }
 
       /* Pulseaudio Mute */
