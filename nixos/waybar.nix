@@ -206,7 +206,7 @@
 
       /* High CPU usage, Temp, Memory usage*/
       #memory.medium {
-        color: #ef9f76;
+        color: #e5c890;
       }
       #memory.high {
         color: #e78284;
