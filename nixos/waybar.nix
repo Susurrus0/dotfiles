@@ -52,7 +52,7 @@
         "pulseaudio" = {
           "format" = "{volume}% {icon}";
           "format-bluetooth" = "{volume}% {icon}";
-          "format-muted" = "";
+          "format-muted" = "";
           "format-icons" = {
             "headphone" = "";
             "hands-free" = "";
@@ -178,8 +178,11 @@
         color: #ef9f76;
       }
       #battery.critical, #battery.charging.critical {
-        color: #e78284;
-        font-weight: bold;
+        background-color: #e78284;
+        color: #303446;
+        border-radius: 4px;
+        padding: 0 6px;
+        margin: 2px 0;
       }
 
       /* Keyboard State (Caps Lock Toggled) */
