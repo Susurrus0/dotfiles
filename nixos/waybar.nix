@@ -70,7 +70,7 @@
         "backlight" = {
           "device" = "intel_backlight";
           "format" = "{percent}% {icon}";
-          "format-icons" = ["" ""];
+          "format-icons" = ["󰃞" "󰃟" "󰃠"];
         };
         "network" = {
           "interface" = "wlp59s0";
