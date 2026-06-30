@@ -177,15 +177,15 @@
       #battery.warning {
         color: #ef9f76;
       }
+      #battery.charging {
+        color: #a6d189;
+      }
       #battery.critical, #battery.charging.critical {
         background-color: #e78284;
         color: #303446;
         border-radius: 4px;
         padding: 0 6px;
         margin: 2px 0;
-      }
-      #battery.charging {
-        color: #a6d189;
       }
 
       /* Keyboard State (Caps Lock Toggled) */
@@ -202,7 +202,7 @@
         background-color: #ef9f76;
         color: #303446;
         border-radius: 4px;
-        padding: 0 6px;
+        padding: 0 10px 0 6px;
         margin: 2px 0;
       }
     '';
