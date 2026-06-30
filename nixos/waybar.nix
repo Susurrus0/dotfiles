@@ -16,7 +16,7 @@
         spacing = 12;
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" "hyprland/window" ];
         modules-center = [  ];
-        modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "battery" "clock" ];
+        modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "drawer" "battery" "clock" ];
         "hyprland/workspaces" = {
           "format" = "{name}: {icon}";
           "format-icons" = {
@@ -120,6 +120,25 @@
               "locked" = "";
               "unlocked" = "";
           };
+        };
+        "drawer" = {
+          "transition-duration" = 500;
+          "children-class" = "tray-child";
+          "transition-left-to-right" = false;
+          "modules" = [
+            "custom/tray-icon"
+            "tray"
+          ];
+        };
+
+        "custom/tray-icon" = {
+          "format" = "  ";
+          "tooltip" = false;
+        };
+
+        "tray" = {
+          "icon-size" = 16;
+          "spacing" = 10;
         };
         "battery" = {
           "states" = {
