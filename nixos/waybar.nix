@@ -88,19 +88,26 @@
           "interval" = 5;
           "format" = "{usage}% ";
           "max-length" = 10;
+          "states" = {
+            "high" = 90;
+          };
         };
         "temperature" = {
           # "thermal-zone": 2,
           # "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
           "critical-threshold" = 80;
           "interval" = 5;
-          "format-critical" = "{temperatureC}°C ";
+          "format-critical" = "{temperatureC}°C 󱗗";
           "format" = "{temperatureC}°C ";
         };
         "memory" = {
           "interval" = 30;
           "format" = "{}% ";
           "max-length" = 10;
+          "states" = {
+            "medium" = 50;
+            "high" = 90;
+          };
         };
         "keyboard-state" = {
           # "numlock" = true;
@@ -195,6 +202,17 @@
         border-radius: 4px;
         padding: 0 6px;
         margin: 2px 0;
+      }
+
+      /* High CPU usage, Temp, Memory usage*/
+      #memory {
+
+      }
+      #temperature.critical {
+        colour: #e78284;
+      }
+      #cpu {
+
       }
 
       /* Pulseaudio Mute */
