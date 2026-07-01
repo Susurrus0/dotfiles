@@ -242,11 +242,10 @@
         color: #a6d189;
       }
       #battery.critical, #battery.charging.critical {
-        background-color: #e78284;
-        color: #303446;
         border-radius: 4px;
         padding: 0 6px;
         margin: 2px 0;
+        animation: blink 2s ease-in-out infinite;
       }
 
       /* Keyboard State (Caps Lock Toggled) */
@@ -279,6 +278,21 @@
         border-radius: 4px;
         padding: 0 10px 0 6px;
         margin: 2px 0;
+      }
+      /* Pulsing animation for critical battery */
+      @keyframes blink {
+        0% {
+          background-color: #e78284;
+          color: #303446;
+        }
+        50% {
+          background-color: rgba(48, 52, 70, 0.80);
+          color: #e78284;
+        }
+        100% {
+          background-color: #e78284;
+          color: #303446;
+        }
       }
     '';
   };
