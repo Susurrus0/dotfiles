@@ -92,7 +92,7 @@
         "network" = {
           "interface" = "wlp59s0";
           "format" = "{ifname}";
-          "format-wifi" = "({signalStrength}%) ";
+          "format-wifi" = "{signalStrength}% ";
           "format-ethernet" = "{ipaddr}/{cidr} 󰊗";
           "format-disconnected" = ""; # An empty format will hide the module.
           "tooltip-format" = "{ifname} via {gwaddr} 󰊗";
