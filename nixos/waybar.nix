@@ -241,7 +241,7 @@
       #battery.charging {
         color: #a6d189;
       }
-      #battery.critical, #battery.charging.critical {
+      #battery.critical {
         border-radius: 4px;
         padding: 0 6px;
         margin: 2px 0;
