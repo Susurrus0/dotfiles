@@ -14,9 +14,26 @@
           "HDMI-A-1"
         ];
         spacing = 12;
-        modules-left = [ "hyprland/workspaces" "wlr/taskbar" "hyprland/window" ];
+        modules-left = [
+          "hyprland/workspaces"
+          "wlr/taskbar"
+          "hyprland/window"
+        ];
         modules-center = [  ];
-        modules-right = [ "pulseaudio" "backlight" "network" "mpd" "cpu" "temperature" "memory" "keyboard-state" "group/tray-drawer" "battery" "clock" "custom/power" ];
+        modules-right = [
+          "pulseaudio"
+          "backlight"
+          "network"
+          "mpd"
+          "cpu"
+          "temperature"
+          "memory"
+          "keyboard-state"
+          "group/tray-drawer"
+          "battery"
+          "clock"
+          "custom/power"
+        ];
         "hyprland/workspaces" = {
           "format" = "{name}: {icon}";
           "format-icons" = {
@@ -32,9 +49,9 @@
               "10" = "";
           };
           "persistent-workspaces" = {
-              # "*" = 5; # 5 workspaces by default on every monitor
+              "*" = 5; # 5 workspaces by default on every monitor
               "eDP-1" = 5; # 5 workspaces specifically on built-in monitor
-              # "HDMI-A-1" = 3; # but only three on HDMI-A-1
+              # "HDMI-A-1" = 3;
           };
         };
         "wlr/taskbar" = {
@@ -113,7 +130,7 @@
           # "numlock" = true;
           "capslock" = true;
           "format" = {
-              # "numlock" = "N {icon}";
+              # "numlock" = "Num {icon}";
               "capslock" = "Caps {icon}";
           };
           "format-icons" = {
@@ -171,9 +188,9 @@
       }
 
       window#waybar {
-        background: rgba(48, 52, 70, 0.80); /* Catppuccin Frappé Base @ 80% opacity */
-        color: #c6d0f5; /* Frappé Text */
-        border-bottom: 2px solid #414559; /* Frappé Surface0 line */
+        background: rgba(48, 52, 70, 0.80);
+        color: #c6d0f5;
+        border-bottom: 2px solid #414559;
       }
 
       /* Power button*/
