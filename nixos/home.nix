@@ -11,6 +11,8 @@ in
     inputs.catppuccin.homeModules.catppuccin
     ./hyprland.nix
     ./waybar.nix
+    ./hypridle.nix
+    ./hyprlock.nix
   ];
 
   home.username = "bruno";
